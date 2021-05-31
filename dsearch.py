@@ -2,10 +2,11 @@ from colorama import Fore, Back, Style
 import requests
 import time
 import os
+from sys import argv
 #imports lmao
 
-url=input("Enter url: ")
-fpath=input("Enter the full path of your wordlist: ")
+url=argv[0]
+fpath=argv[1]
 wfile=open(fpath, 'r')
 
 i=0
